@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +25,4 @@ Route::post('/insertstudent',[StudentController::class, 'InsertStudent']);
 Route::get('/edit/{id}',[StudentController::class, 'Edit']);
 Route::post('/update/{id}',[StudentController::class,'Update']);
 Route::get('delete/{id}',[StudentController::class, 'Delete']);
+Route::get('getapi',[UserController::class,'test']);

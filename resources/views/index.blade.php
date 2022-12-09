@@ -37,9 +37,9 @@
                                     <tr>
                                         <td>{{ $row->id }}</td>
                                         <td><img src="{{ asset($row->image) }}" style=" height: 5vh;"></td>
-                                        <td>{{ $row->firstname }}</td>
-                                        <td>{{ $row->lastname }}</td>
-                                        <td>{{ $row->email }}</td>
+                                        <td>{{ $row['firstname'] }}</td>
+                                        <td>{{ $row['lastname'] }}</td>
+                                        <td>{{ $row['email'] }}</td>
                                         <td><label><a href="{{ url('/edit/' . $row->id) }}"
                                                     class="btn btn-primary shadow">Edit</a></label></td>
                                         <td><label><a href="{{ url('/delete/' . $row->id) }}"
@@ -59,6 +59,13 @@
                     <div class="card-body d-flex justify-content-center">
                         <label for=""><a href="{{ url('/addstudent') }}" class="btn btn-primary shadow">Create
                                 Student</a></label>
+                                ========= {{$json['activity']}}
+                    </div>
+                    <div>
+                        <p>
+                         
+
+                        </p>
                     </div>
                 </div>
             </div>
