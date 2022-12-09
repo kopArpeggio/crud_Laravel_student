@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.my-font {
+    font-family: 'Gamja Flower', cursive;
+    font-size: 18px;
+}
+
+.title{
+    font-weight: bold !important;
+    color: rgb(236, 53, 108) !important;
+}
+
+.card{
+    opacity: 0.7 !important;
+    border-radius: 20px !important;
+}
+body{
+    font-family: 'Gamja Flower', cursive; 
+    font-size: 18px;
+}
