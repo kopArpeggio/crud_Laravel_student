@@ -12,10 +12,10 @@
             <div class="col-3"></div>
             <div class="col-6 my-auto align-self-center ">
                 <div class="card " style="border:5px solid rgb(223, 175, 193)">
-                
+
                     <div class="card-header">Student Information</div>
                     <div class="card-body">
-                        <form action="{{ url('/insertstudent') }}" enctype="multipart/form-data" method="POST" >
+                        <form action="{{ url('/insertstudent') }}" enctype="multipart/form-data" method="POST">
                             @csrf
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="firstname" name="firstname"

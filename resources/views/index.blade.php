@@ -8,9 +8,9 @@
 <body style="font-family: 'Gamja Flower', cursive; font-size: 18px;background-color: rgb(226, 209, 218)">
     <div class="container" style="">
         <div class="row shadow"
-            style="height: 100vh; padding:40px;   width:100% ; margin: 50px; border-radius: 8%; background-color: antiquewhite">
+            style="height: 100vh;   width:100% ;border-radius: 8%; background-color: antiquewhite">
             <div class="row">
-                <div class="col d-flex justify-content-center align-items-center" style="padding: 80px 0px 0px 0px">
+                <div class="col-12 d-flex justify-content-center align-items-center" style="padding: 80px 0px 0px 0px">
                     <div style="color: rgb(187, 44, 75); font-size: 60px">
                         Manage Student <i class="fa-regular fa-heart"></i>
                     </div>
@@ -36,9 +36,9 @@
                                 @foreach ($student as $row)
                                     <tr>
                                         <td>{{ $row->id }}</td>
-                                        <td><img src="{{ asset($row->image) }}" style=" height: 5vh;"></td>
-                                        <td>{{ $row->firstname }}</td>
-                                        <td>{{ $row->lastname }}</td>
+                                        <td><img src="{{ asset($row['image']) }}" style=" height: 5vh;"></td>
+                                        <td>{{ $row['firstname'] }}</td>
+                                        <td>{{ $row['lastname'] }}</td>
                                         <td>{{ $row->email }}</td>
                                         <td><label><a href="{{ url('/edit/' . $row->id) }}"
                                                     class="btn btn-primary shadow">Edit</a></label></td>

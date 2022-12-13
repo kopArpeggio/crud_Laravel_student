@@ -11,8 +11,8 @@ class StudentController extends Controller
 
     public function Edit($id)
     {
-        $student = Student::find($id);
-        return view('edit', compact('student'));
+        $students = Student::find($id);
+        return view('edit', compact('students'));
     }
 
     public function Delete($id)
@@ -107,7 +107,7 @@ class StudentController extends Controller
             'image' => $fullpatch
         ]);
 
-        $raw_image->move($upload_location, $img_name);
+        $raw_image->move($upload_location , $img_name);
 
         return redirect('/manage');
     }
